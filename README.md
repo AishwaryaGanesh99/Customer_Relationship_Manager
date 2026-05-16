@@ -1,6 +1,6 @@
 # Customer Relationship Management (CRM) Application
 
-A full-stack CRM system built using Spring Boot that allows users to manage customer data with features such as CRUD operations, search, pagination, sorting, and REST APIs.
+A production-style full-stack CRM application built using Spring Boot that allows users to manage customer data with features such as CRUD operations, search, pagination, sorting, and REST APIs.
 
 ---
 
@@ -18,13 +18,14 @@ A full-stack CRM system built using Spring Boot that allows users to manage cust
 
 ## Tech Stack
 
-Backend: Spring Boot, Spring MVC  
-Database: MySQL  
-ORM: Spring Data JPA (Hibernate)  
-Frontend: Thymeleaf, HTML, CSS  
-Security: Spring Security  
-Build Tool: Maven  
-API Testing: Postman
+- Backend: Spring Boot, Spring MVC
+- Database: MySQL
+- ORM: Spring Data JPA (Hibernate)
+- Frontend: Thymeleaf, HTML, CSS
+- Security: Spring Security
+- Build Tool: Maven
+- API Testing: Postman
+- Deployment: Render, Railway
 
 ---
 
@@ -37,6 +38,21 @@ com.example.crm
 ├── repository    (Database access layer)  
 ├── entity        (JPA entities)  
 ├── dto           (Data Transfer Objects)
+
+---
+
+## Live Demo
+
+https://crm-application-suud.onrender.com/
+
+Note: The live demo may take 30–60 seconds to load initially due to free-tier hosting cold starts.
+
+---
+
+## Deployment
+
+Frontend + Backend hosted on Render  
+Cloud MySQL database hosted on Railway
 
 ---
 
@@ -110,13 +126,24 @@ DELETE /api/customers/{id}   -> Delete customer
 
 ---
 
+## Production Features
+
+- Cloud deployment using Render and Railway
+- Pagination and server-side search optimization
+- Layered architecture following industry-standard design
+- RESTful API design
+- Form-based authentication using Spring Security
+- Persistent cloud-hosted MySQL database
+- Environment variable based configuration for deployment
+
+---
+
 ## Future Improvements
 
-- JWT-based authentication
+- Docker-based deployment
+- CI/CD pipeline integration
 - Role-based access control
-- Docker containerization
-- Cloud deployment (Render or AWS)
-- Frontend upgrade using React
+- JWT-based authentication
 
 ---
 
